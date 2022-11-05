@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "0b019e97-ab8f-4c34-935a-d5efed2e3864",
+		"name": "school.service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23871612"
+	},
+	"item": [
+		{
+			"name": "health check",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add School",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SchoolName\" : \"PDEA School\",\r\n    \"Address\" : \"Kharadi, Pune.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/school",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"school"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete School",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJjNTFhNmU3Yy0zYmJmLTRiYTItYjViNi05Y2Y1ZWY4MDNlOTIiLCJVc2VyTmFtZSI6ImFkbWluIiwiQ3VycmVudFJvbGVJZCI6MSwiRGlzcGxheU5hbWUiOiJBZG1pbiBTeXN0ZW0iLCJTZXNzaW9uSWQiOiI3ZGE3NzMxNi1kZjFiLTQxNGUtOTY0NS02YmExZTQ0NzdiODciLCJQaG9uZSI6Iis5MS0wMDAwMDAwMDAwIiwiRW1haWwiOiJhZG1pbi5jYXJlcGxhbnNAcmVhbmZvdW5kYXRpb24ub3JnIiwiaWF0IjoxNjY2MDg4ODU5LCJleHAiOjE2Njg2ODA4NTl9.fx8-N2JiBg-CnZjZkuhLgx4i3ZgcN6eLHWWjj45N_kw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer f868195d1b3b2189aad3bc812043c5dc486a3d3e053aecab6185e4437bee1fb100169c0353d31214ff3f4fdc62ef9ba7614f50529bbc7d126d196ba1e21536a5fe9c1ecf1ef752bcda2b38c36d70972a1405914b84e482abe35fe90040415350bdd37e292b1ae8145372254adf7c57ad31701e5cd6496b94c7ae3baa813904d6",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/school/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"school",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add roles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"RoleName\" : \"Student\",\r\n    \"Description\" : \"students\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"RoleId\": 1,\r\n        \"SchoolId\" : 2,\r\n        \"FirstName\": \"Prasad\",\r\n        \"LastName\": \"k\",\r\n        \"Phone\": \"9987456123\",\r\n        \"Email\": \"admin@pdea.com\",\r\n        \"Gender\" : \"Male\",\r\n        \"UserName\": \"admin\",\r\n        \"Password\": \"Admin@1234\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\" : \"admin\",\r\n    \"Password\" : \"Admin@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/login-password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update School Info",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

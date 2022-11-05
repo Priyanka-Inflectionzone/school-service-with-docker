@@ -1,0 +1,88 @@
+[
+    {
+        "Role": "Admin",
+        "Privileges": [
+            "User.Create",
+            "User.GetById",
+            "User.Search",
+            "User.Update",
+            "User.Delete",
+            "User.LoginWithPassword",
+            "User.ResetPassword",
+            "User.LoginWithOtp",
+            "User.SendOtp",
+            "User.Logout",
+
+            "School.Create",
+            "School.Update",
+            "School.Delete",
+            "School.Search",
+            "School.GetById"
+
+
+        ]
+    },
+
+    {
+        "Role": "Staff",
+        "Privileges": [
+            "User.Create",
+            "User.GetById",
+            "User.Search",
+            "User.Update",
+            "User.Delete",
+            "User.LoginWithPassword",
+            "User.ResetPassword",
+            "User.LoginWithOtp",
+            "User.SendOtp",
+            "User.Logout",
+
+            "FileResource.Upload",
+            "FileResource.GetById",
+            "FileResource.Search",
+            "FileResource.Download"
+
+           
+        ]
+    },
+
+    {
+        "Role": "Parent",
+        "Privileges": [
+            "User.Create",
+            "User.GetById",
+            "User.Search",
+            "User.Update",
+            "User.Delete",
+            "User.LoginWithPassword",
+            "User.ResetPassword",
+            "User.LoginWithOtp",
+            "User.SendOtp",
+            "User.Logout",
+
+            "FileResource.Upload",
+            "FileResource.GetById",
+            "FileResource.Search",
+            "FileResource.Download"
+
+           
+        ]
+    },
+    {
+        "Role": "Student",
+        "Privileges": [
+            "User.Create",
+            "User.GetById",
+            "User.Search",
+            "User.Update",
+            "User.Delete",
+            "User.LoginWithPassword",
+            "User.ResetPassword",
+            "User.LoginWithOtp",
+            "User.SendOtp",
+            "User.Logout" 
+        ]
+    }
+]
+
+
