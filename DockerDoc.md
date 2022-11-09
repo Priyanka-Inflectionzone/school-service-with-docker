@@ -21,11 +21,11 @@ Step 6: Go to .env file and change database configuration variable values accord
 Step 7: Open terminal insde your service folder. Write command "docker-compose up --build".
 ("docker-compose up" command starts the containers. "--build" option build images before starting containers.)
 
-Step 8: You may see your built image & all other images list using "docker images" or "docker image ls" command.
+Step 8: You may see your built image & list of all other images using "docker images" or "docker image ls" command.
 
-Step 9: To see list of running contaoners, use "docker ps" command.
+Step 9: To see list of running containers, use "docker ps" command. To see list of all running and exited containers, use "docker ps -a" command.
 
-Step 10: You may access your containers to see whats insede the using "docker exec -it <container name> /bin/bash" command.
+Step 10: You may access your containers using "docker exec -it <container name> /bin/bash" command.
 (If bash is not installed you may use "docker exec -it <container name> /bin/sh")
 
 Step 11: Inside database container, login to mysql using "mysql -u<username> -p" command. It will prompt you to enter password. \* After login you may see databases, tables, use other mysql commands.
